@@ -1,0 +1,9 @@
+NP-23:Phone number column test ('phone' input field).
+
+Summary
+Testing of Phone column in 'GINSTR' app, input field 'enter info'.
+
+Preconditions
+Open home page, log in, choose an app, add a table not belonging to a ginstr app (or choose from existing tables), 
+  right click on the table -> edit column -> add column 'Phone number'.
+Fill input fields 'enter name' and 'enter phone' with correct values.
