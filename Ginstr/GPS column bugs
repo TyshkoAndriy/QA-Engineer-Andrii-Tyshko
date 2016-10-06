@@ -1,0 +1,69 @@
+Summary
+Ginstr APP GPS column mulfunction.
+
+Description:
+Referring to Test Case 'NP-17:GPS column test.' Step 2, 
+if you will input value '0' in latitude and longitude field, system will recognize it as there is no value.
+
+Steps to reproduce:
+1. Open home page
+2. Log in
+3. Choose an app
+4. Add a table not belonging to a ginstr app (or choose from existing tables)
+5. Right click on the table -> edit column -> add column 'GPS'.
+6. Input in latitude and longitude fields value '0'.
+7. Save coordinates.
+
+Expected result:
+Coordinates '0, 0' saved.
+
+Actual result:
+No value saved.
+
+------------------------------------------------------------------------------------------------------------------
+
+Summary
+Ginstr App GPS column input.
+
+Description:
+Referring to Test Case 'NP-17:GPS column test.' Step 1, when you start input negative value with symbol '-', 
+system automatically gives a warning message that this symbol is invalid.
+
+Steps to reproduce:
+1. Open home page
+2. Log in
+3. Choose an app
+4. Add a table not belonging to a ginstr app (or choose from existing tables)
+5. Right click on the table -> edit column -> add column 'GPS'.
+6. Input in latitude and/or longitude fields symbol '-'.
+
+Expected result:
+No error message expected. Coordinates with symbol '-' are valid for South latitude and West longitude.
+
+Actual result:
+System automatically gives a warning message that the symbol is invalid.
+
+------------------------------------------------------------------------------------------------------------------
+
+Summary
+Ginstr App GPS column input length.
+
+Description:
+Referring to Test Case 'NP-17:GPS column test.' Step 4, field setting allows you to input maximum 
+16 symbols(including decimal). It allows you to input more, but when you will try to save it,
+it will give you an error message and won't save value.
+
+Steps to reproduce:
+1. Open home page
+2. Log in
+3. Choose an app
+4. Add a table not belonging to a ginstr app (or choose from existing tables)
+5. Right click on the table -> edit column -> add column 'GPS'.
+6. Input in latitude and/or longitude fields 17 symbols.
+7. Save coordinates.
+
+Expected result:
+Limit for input length should be present. Field should't allow to input more then 16 symbols.
+
+Actual result:
+More than 16 symbols can be typed, however they won't be saved.
