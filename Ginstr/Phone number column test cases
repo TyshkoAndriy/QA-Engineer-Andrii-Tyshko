@@ -1,3 +1,51 @@
+NP-21:Phone number column test (Name field).
+
+Summary
+Testing of Phone column in 'GINSTR' app, input field 'Name'.
+
+Preconditions
+Open home page, log in, choose an app, add a table not belonging to a ginstr app (or choose from existing tables), 
+right click on the table -> edit column -> add column 'Phone number'.
+Fill input fields 'enter info' and 'enter phone' with correct values.
+
+Step actions	                                                              Expected Results	 	 
+1.	Input in field 'enter name' any name and surename.Save it.              Input saved. No error message expected.
+
+2.	Input in field 'enter name' letters (>500).                             Input limited. No error message expected.
+
+3.	Input in field 'enter name' only digits (<20 digits). Save it.          Impossible to save. Error message expected.
+
+4.	Input in field 'enter name' firbidden symbols                           Impossible to save. Error message expected.
+(!@#$$%^&*()_-+=<>?/|\). Save it.                     
+
+5. Input any valid name, press 'Tab' while coursor is in the field.         No tab input expected. No warning message expected.
+Save it.                                                                    Switch to other field expected.
+
+------------------------------------------------------------------------------------------------------------------------------
+ NP-22:Phone number column test ('info' input field).
+
+Summary
+Testing of Phone column in 'GINSTR' app, input field 'enter info'.
+
+Preconditions
+Open home page, log in, choose an app, add a table not belonging to a ginstr app (or choose from existing tables), 
+right click on the table -> edit column -> add column 'Phone number'.
+Fill input fields 'enter name' and 'enter phone' with correct values.
+
+Step actions	                                                              Expected Results	 	 
+1.	Input in field 'enter info' any value. Save it.                         Input saved. No error message expected.
+
+2.	Input in field 'enter info' letters (>500).                             Input limited. No error message expected.
+
+3.	Input in field 'enter info' only digits (<20 digits). Save it.          Input saved. No error message expected.
+
+4.	Input in field 'enter info' firbidden symbols                           Input saved. No error message expected.
+(!@#$$%^&*()_-+=<>?/|\). Save it.                     
+
+5. Input any symbol, press 'Tab' while coursor is in the field.             No tab input expected. No warning message expected.
+Save it.                                                                    Switch to other field expected.
+
+----------------------------------------------------------------------------------------------------------------------------
 NP-23:Phone number column test ('phone' input field).
 
 Summary
@@ -7,3 +55,14 @@ Preconditions
 Open home page, log in, choose an app, add a table not belonging to a ginstr app (or choose from existing tables), 
   right click on the table -> edit column -> add column 'Phone number'.
 Fill input fields 'enter name' and 'enter phone' with correct values.
+
+Step actions	                                                              Expected Results	 	 
+1.	Input in field 'enter phone number' any valid phone. Save it.           Input saved. No error message expected.
+
+2.	Input in field 'enter phone number' letters.                            Input not allowed.
+
+3.	Input in field 'enter phone number' special symbols                     Input not allowed.
+(!@#$$%^&*()_-+=<>?/|\, space). Save it.
+
+4.	No tab input expected. No warning message expected.                     Switch to other field expected.
+
