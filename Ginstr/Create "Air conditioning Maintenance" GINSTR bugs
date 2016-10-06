@@ -1,0 +1,79 @@
+Summary
+There is no text box to input "Address where this report was created".
+
+Description:
+In "Gemymotion" "Ginstr" app. There is no text box to input "Address where this report was created". 
+However, in browser's "Ginstr" column is present.
+
+Steps to reproduce:
+1. Follow pre-condition steps in Test Case NP-17:Testing of "Air Conditioning Maintenece" app.
+2. Fill in all correct information. Click "Save air conditioner maintenance report".
+3. Note that no text box "Address where this report was created" (or similar) is present.
+
+Actual result: 
+there is no possibility to input address.
+
+Expected result: 
+address input should be present.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Summary
+GPS coordinates can't be captured.
+
+Description:
+GPS coordinates in browser's "Ginstr" are allways 0, 0 after submitting the form using "Air conditioner" app.
+
+Steps to reproduce:
+1. Follow pre-condition steps in Test Case NP-17:Testing of "Air Conditioning Maintenece" app.
+2. Fill in all correct information. Click "Save air conditioner maintenance report".
+3. Open browser's "Ginstr".
+4. Pay attention at the "GPS position where this report was created" column.
+
+Actual result: 
+GPS coordinates are allways 0, 0.
+
+Expected result: 
+"Air condition" app. captures GPS coordinates automatically.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Summary
+There is no possibility to edit or delete signature after submitting it.
+
+Description:
+There is no possibility to edit or delete signature after submitting it.
+
+Steps to reproduce:
+1. Follow pre-condition steps in Test Case NP-17:Testing of "Air Conditioning Maintenece" app.
+2. Click "Customer signature"
+3. Draw the signature, click "Save".
+4. Pay attantion that there is no possibility to edit/erase existing signature.
+
+Actual result: 
+No possibility to edit/erase existing signature.
+
+Expected result: 
+Signature should be editable after submitting signature, but before submitting report.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Summary
+"Air Condition" app. crashes after changing of language.
+
+Description:
+"Air Condition" app. crashes after changing of language.
+
+Steps to reproduce:
+1. Follow pre-condition steps in Test Case NP-17:Testing of "Air Conditioning Maintenece" app.
+2. Click "Settings" icon on the top of the screen.
+3. Click "Settings"
+4. Click "select language".
+5. Choose any option different from current.
+6. Application crashes.
+
+Actual result:
+Application crashes.
+
+Expected result: 
+Language of the applicatio changed.
