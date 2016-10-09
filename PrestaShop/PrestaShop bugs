@@ -1,0 +1,117 @@
+Summary: 
+File attaching feature in 'CONTACT US' service is disabled
+
+Description
+File attaching feature in 'CONTACT US' service is disabled.
+  
+Steps To Reproduce	
+1. Open home page http://prestashop.qatestlab.com.ua [^]
+2. Click link button 'Обратная связь' at the header.
+3. Pay attention at the 'Choose file' button on the left side of the 'SEND MESSAGE' feature.
+
+Actual result: File attaching feature in 'CONTACT US' service is disabled.
+Expected resul: File attaching feature in 'CONTACT US' service is enabled.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Summary
+Unable to recognize email address during "Signing up" procedure after logging in through Facebook account.
+
+Description
+Error message pops up during signing up procedure after submitting filled up form stating "Please enter a valid e-mail address".
+This error occurs because web service unable to recognize email address during "Signing up" procedure after logging 
+in through Facebook account and there is no "Email address" confirmation text field during filling up this form after Facebook login.
+
+Steps To Reproduce
+1. Open URL www.dailystrength.org/groups/pet-appreciation-month-2012
+2. On the left side navigation panel "MEMBER SIGN IN" click "Connect" inset with "Facebook" logo.
+3. Click "Login" button.
+4. Log in using your Login and Password.
+5. Click button "No" at the window popped up.
+6. Fill in form with correct data.
+7. Click button "Continue" at the bottom of the form.
+8. Pay attention at the error message popped up.
+
+Expected results: No error message.
+
+Actual results: email not recognized after filling into Facebook login form, error message pop up after submitting the form.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Summary
+Cursor doesn't change to pointer for Nav Menu (products) on hover
+
+Description
+Cursor doesn't change to pointer for Nav Menu (products: 'Women', 'Dresses', 'T-Shirts') on hover unlike other clickable links.
+
+Steps To Reproduce
+1. Open home page http://prestashop.qatestlab.com.ua [^]
+2. Hover cursor over the 'Women', 'Dresses', 'T-Shirts' link buttons.
+3. Cursor doesn't change to pointer.
+
+Expected result: cursor is changed to pointer for Nav Menu (products) on hover.
+Actual result: cursor isn't change to pointer for Nav Menu (products) on hover.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Summary
+Cursor doesn't change to pointer for Nav Menu (products) on hover
+
+Description
+Cursor doesn't change to pointer for Nav Menu (products: 'Women', 'Dresses', 'T-Shirts') on hover unlike other clickable links.
+
+Steps To Reproduce
+1. Open home page http://prestashop.qatestlab.com.ua [^]
+2. Hover cursor over the 'Women', 'Dresses', 'T-Shirts' link buttons.
+3. Cursor doesn't change to pointer.
+
+Expected result: cursor is changed to pointer for Nav Menu (products) on hover.
+Actual result: cursor isn't change to pointer for Nav Menu (products) on hover.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Summary
+There are three different language present at the page
+
+Description
+There are three different language present at the page (russian, english and french) while 'russian' language is chosen.
+
+Steps To Reproduce
+1. Open home page http://prestashop.qatestlab.com.ua [^]
+2. Pay attantion at the language differencies at the main page.
+
+Actual result: three different languages are present at the page at the same time.
+Expected result: if there is an option to choose language, there should be one language at the page.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Summary
+Footer element not aligned to the center in information for text box 'Введите ваш e-mail' referred to 'Рассылка'
+
+Description
+Footer element not aligned to the center in information for text box 'Введите ваш e-mail' referred to 'Рассылка'.
+
+Steps To Reproduce
+1. Open home page http://prestashop.qatestlab.com.ua [^]
+2. Scroll down page (if required) till footer appears.
+3. Pay attention at the 'Введите ваш e-mail' text box information.
+
+Actual result: info is not aligned to the center in information for text box 'Введите ваш e-mail' referred to 'Рассылка'.
+Expected result: info is aligned to the center in information for text box 'Введите ваш e-mail' referred to 'Рассылка'.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Summary
+Nav Menu links 'Dresses' and 'T-Shirts' are duplicates in sub-menu 'Women'
+
+Description
+Nav Menu links 'Dresses' and 'T-Shirts' are duplicates in sub-menu 'Women'.
+
+Steps To Reproduce
+1. Open home page http://prestashop.qatestlab.com.ua [^]
+2. Hover your cursor over 'Women' link button.
+3. Compare sub-menu with link button 'Dresses' and 'T-Shirts'.
+
+Actual results: Nav Menu links 'Dresses' and 'T-Shirts' are duplicates in sub-menu 'Women'.
+Expected results: there shere should be no duplicates in the Nav Menu.
+Actual result: cursor isn't change to pointer for Nav Menu (products) on hover.
