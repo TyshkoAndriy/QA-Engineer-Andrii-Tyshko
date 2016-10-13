@@ -1,0 +1,62 @@
+ The following tests was made using GoogleChrome 53, Mozila Firefox 49, Internet Explorer 11, Microsoft Edge 25.
+ 
+ Main page:
+1. I've found source code!
+2. Essential fields of the registration page are not indicated.
+3. Page is designed for 90% zoom ("Name" raw on the main page is out of the screen).
+4. "Email" and "Name" raws on the main page are not adjusting to the current zoom (unlike Header and Footer).
+5. The link "Attract Group" included into the footer of the page is trying to reach  http://attractgroup.co/ (DNS address could not be found)  (m on the end is missing).
+6. Whole server was down from 14:43 LT (11:43 GMT)
+
+ 
+ Registration form:
+7. Possibility to create different accounts with the same email.
+8. No error message is shown after registration form submission if email text-field is empty/filled with spacebars (redirecting to the main page).
+9. Possibility to register if Email text-field filled with any symbols/invalid email.
+10. Text fields are not limited(" HTTP ERROR 500 The qatestask.php-cd.attractgroup.com page isn’t working / qatestask.php-cd.attractgroup.com is currently unable to handle this request." if while registration in Email text field 1M symbols).
+11. Possibility to type into Email text-field letters other than english.
+12. Possibility to type any special symbols into email text field (!@#$%^&*()_+-=,./<>?[]{}|\~`:;"')
+13. Possibility to create a user if no password is typed, but unable to authorize as this user (redirecting to the main page).
+ 
+14. 
+Summary: Possibility to create a user which is not listed on the main page
+Description: Possibility to create a user which is not listed on the main page 
+Steps to reproduce: 1.Open the home page http://qatestask.php-cd.attractgroup.com/index.php
+					2.Click "Регистрация" button on the top right corner of the page
+					3.In the email text-field input <script>alert('xss')</script> 
+					4.Input captcha
+					5.Input password
+					6.Submit the form
+					7.Search for your entry on the main page
+					8.Click "Авторизация" button on the top right corner of the page
+					9.Enter In the email text-field input <script>alert('xss')</script>, enter password
+					10.Note that login is successful.
+Expected result: user can not be created
+Actual result: invisible user is created
+
+Priority: P5
+Severity: S3
+
+Assignee: 
+Sataus: new
+ 
+15. No error message is shown after registration form submission if Password text-field is empty/filled with spacebars (redirecting to the main page).
+ 
+16. "Name" text field is limited to 10 symbols only.
+ 
+17. Birth date input has no year scroll button.
+18. Possibility to enter birth date from the future.
+19. Possibility to create an account without birth date (after authorization birth date is 00-00-0000).
+ 
+20. There are only 3 options of captcha picture on registration page.
+21. One option of captcha picture has symbols which are not on the English keyboard.
+22. No connection between current captcha and text-field for captcha (If there is a new captcha picture and in the text-field previous captcha is typed - validation is passed).
+23. No buttons for changing captcha picture.
+ 
+24. No confirmation email was sent after registration.
+ 
+
+Authorization form:
+25. No email was sent after submission the "Восстановить пароль" form.
+26. "Запомнить" feature is not functional.
+27. No error message show up if no password is typed into the text field.
